@@ -1,2 +1,2 @@
 #!/bin/bash
-for item in * do if [ -d "$item" ] then chmod +x "$item" fi done
+find . -type d -exec chmod a+x {} \
