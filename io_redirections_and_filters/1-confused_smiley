@@ -1,2 +1,2 @@
 #!/bin/bash
-x="(Ôo)' echo "$x"
+echo "(Ôo)'"
