@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.git' | rev | cut -d "/" -f 1 | cut -d '.' 2- | rev | LC_ALL =c sort -f
+find . -type f -name '*.gif' -print0 | sort -z | while IFS= read -r -d '' file; do echo "${file#./}" | cut -d '.' -f 1; done
